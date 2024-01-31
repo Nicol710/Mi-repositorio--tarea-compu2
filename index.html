@@ -7,18 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>INDICE DE MASA CORPORAL (IMC)</h1>
-    <img src="img_pag/img1.1.jpg" height="310" width="550"/>
+    <h1 class = "cambioFuente" style="text-align: center;">INDICE DE MASA CORPORAL (IMC)</h1>
+    <div style="text-align: center;">
+        <img src="img_pag/img1.1.jpg" width=50%/>
+    </div>
     <br>
-    <h2>¿Qué es el IMC?</h2> 
-    <p>
+    <h2 class="cambioFuente">¿Qué es el IMC?</h2> 
+    <p class="cambioFuente">
         El índice de masa corporal (IMC) es una cifra que se calcula en base al peso y la 
         estatura de la persona. Para la mayoría de las personas, el IMC es un indicador 
         confiable de la gordura y se usa para identificar las categorías de peso que pueden 
         llevar a problemas de salud.
     </p>
     <!--AQUI QUISIERA TENER MI CALCU-->
-
+    <div class="calculadora">
+        <br>
+		<h1>Calcula cual es tu Indice de Masa Corporal:</h1>
+        <p>Por favor intoduzca su Estatura y su Peso.</p>
+		<form action="index.html" class="formulario" method="post">
+			<label for="altura">Estatura (m): </label>
+			<input type="number" id = "altura" name="altura" >
+			<br>
+			<br>
+			<label for="peso">Peso (kg): </label>
+			<input type="number" id = 'peso' name="peso" >
+            <br>
+			<!--<input type="button" name="enviar" value="Enviar" onclick="enviarAlerta();">-->
+			
+            <br><input type="button" value="Calcular" onclick="calcularimc()">
+		</form>
+		<p class="resultado">
+			Resultado IMC: <b><span id="imc"></span></b>
+			<br>Clasificacion de su IMC: <b><span id="info"></span></b>
+		</p>
+	</div>
+    <span class="clasificacion">
     <p><b>Clasificación de las personas según su Índice de Masa Corporal (IMC):</b></p>
     <ul>
         <li>Si su IMC es menos de 18.5, se encuentra dentro del rango de peso insuficiente.</li>
@@ -26,10 +49,10 @@
         <li>Si su IMC es entre 25.0 y 29.9, se encuentra dentro del rango de sobrepeso.</li>
         <li>Si su IMC es 30.0 o superior, se encuentra dentro del rango de obesidad.</li>
     </ul> 
-    <img src="img_pag/img2.jpg" height="200" width="350"/>
+    <img src="img_pag/img2.jpg" height="200" width="350"/></span>
     
 
 
-
+<script src="script.js"></script>
 </body>
 </html>

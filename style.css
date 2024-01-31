@@ -1,4 +1,5 @@
 body {
+    margin: 5% 10% 5% 10%;
 
     background-image: url(img_pag/fondo2.avif);
     background-size: cover;
@@ -7,3 +8,43 @@ body {
     background-attachment: fixed;
 
 }
+
+.cambioFuente{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.calculadora{
+    text-align: center;
+    border: 10px #718A83;
+    border-style: outset;
+    border-width: 10px;
+    margin: 5% 15% 5% 15% ;
+}
+
+.clasificacion, .imagen {
+    
+    max-width: 100%;
+ 
+    
+}
+.clasificacion{
+    text-align: left;
+    display: flex
+
+    
+}
+.imagen{
+    text-align: right;
+}
+/*BORDES EN CSS.
+Esto se hace con un selector y usando la propiedad 'border' seguido de un ':',
+el primer parametro que recibe esta propiedad es el grosor ej: 5px, separado por un espacio,
+el segundo parametro es el color del borde, luego separado por otro espacio, indicamos el estilo que queremos
+que tenga el borde con Ctrl+Espacio podemos ver las opciones disponibles.
+Estos 3 parametros tambien podemos indicarlos de otra manera, y esto es usando las propiedades
+asociadas a dichos parametros:
+border-style:indicamos el estilo del borde
+border-color: indicamos el color del estilos
+border-radius: permite redondear las esquinas del borde, recibe como parametro, el radio en pixeles
+border-width: ancho del borde en pixeles
+---*/
